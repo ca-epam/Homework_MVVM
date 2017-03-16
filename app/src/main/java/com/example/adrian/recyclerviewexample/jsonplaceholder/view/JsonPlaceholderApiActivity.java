@@ -1,15 +1,18 @@
-package com.example.adrian.recyclerviewexample;
+package com.example.adrian.recyclerviewexample.jsonplaceholder.view;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.example.adrian.recyclerviewexample.R;
+import com.example.adrian.recyclerviewexample.SampleAdapter;
+import com.example.adrian.recyclerviewexample.TestData;
 import com.example.adrian.recyclerviewexample.model.SampleDataViewModel;
 
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class JsonPlaceholderApiActivity extends AppCompatActivity implements JsonPlaceholderApiView {
 
     private RecyclerView rvSampleDataList;
     private SampleAdapter sampleAdapter;
